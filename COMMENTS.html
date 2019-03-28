@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<HTML LANG="eng">
+<head>
+    <title>Proto</title>
+</head>
+<body>
+<h1 style="text-align:center">Proto</h1>
+Steps to prepare environment to run the code<br/>
+<ol>
+    <li>Download the Oracle JDK version 8 by clicking <a  target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">here</a></li>
+    <li>Add JAVA_HOME to your environment variables pointing to where JAVA is installed</li>
+    <li>Unzip the proto.zip file</li>
+    <li>Download and install the apache maven product <a  target="_blank" href="https://maven.apache.org/download.cgi">Here</a></li>
+    <li>Open a unix shell</li>
+    <li>Check and make sure that the proto directory holds the txnlog.dat file</li>
+    <li>Run the proto.sh shell script which should run the program</li>
+</ol>
+Once the program runs the following will happen...
+<ol>
+    <li>The program will read the proto/txnlog.dat file</li>
+    <li>If the file is missing it will inform the user and exit with code 1</li>
+    <li>It will read the data.</li>
+    <li>It will process the records based on the specifications as I understood them</li>
+    <li>It will generate and display two web pages using the default application for an html file</li>
+    <ul>
+        <li>If there's no default application for the html file type then you will have to check the temp directory for two new html files.</li>
+        <ol>
+            <li>proto...html</li>
+            <li>Final%20Report...html</li>
+        </ol>
+        <li>There is information on how to set a default browser by clicking <a  target="_blank" href="https://unix.stackexchange.com/questions/234734/set-the-default-browser-system-wide-on-manjaro">here</a></li>
+    </ul>
+    <li>It will attempt to launch those html files using the default application browser</li>
+
+</ol>
+</body>
+</HTML>

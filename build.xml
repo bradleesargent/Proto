@@ -1,0 +1,23 @@
+<project name="proto">
+    <target name="proto">
+        <zip destfile="proto.zip"
+             basedir="."
+             excludes="proto.zip" />
+    </target>
+    <target name="javadoc">
+        <javadoc
+                sourcepath="src/main/java"
+                 defaultexcludes="yes"
+                 destdir="docs/api"
+                 author="true"
+                 version="true"
+                 use="true"
+                 windowtitle="Proco">
+            <doctitle><![CDATA[<h1>Proco</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Bradlee Sargent</i>]]></bottom>
+            <tag name="todo" scope="all" description="To do:"/>
+            <link offline="true" href="https://docs.oracle.com/javase/8/docs/api/" packagelistLoc="C:\tmp"/>
+            <link href="https://docs.oracle.com/javase/8/docs/api/"/>
+        </javadoc>
+    </target>
+</project>
